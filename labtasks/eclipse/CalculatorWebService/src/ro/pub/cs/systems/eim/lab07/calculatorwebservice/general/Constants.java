@@ -1,5 +1,6 @@
 package ro.pub.cs.systems.eim.lab07.calculatorwebservice.general;
 
+
 public interface Constants {
 
     public static boolean DEBUG                    = true;

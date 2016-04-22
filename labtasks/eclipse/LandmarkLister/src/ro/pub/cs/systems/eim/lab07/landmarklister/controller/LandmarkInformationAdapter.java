@@ -11,7 +11,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+
 public class LandmarkInformationAdapter extends BaseAdapter {
+
     private Context context;
     private List<LandmarkInformation> content;
 
@@ -27,26 +29,31 @@ public class LandmarkInformationAdapter extends BaseAdapter {
         TextView countryCodeTextView;
     }
 
+
     public LandmarkInformationAdapter(Context context, List<LandmarkInformation> content) {
         this.context = context;
         this.content = content;
         this.layoutInflater = (LayoutInflater)this.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
+
     @Override
     public int getCount() {
         return content.size();
     }
+
 
     @Override
     public Object getItem(int position) {
         return content.get(position);
     }
 
+
     @Override
     public long getItemId(int position) {
         return 0;
     }
+
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -67,9 +74,10 @@ public class LandmarkInformationAdapter extends BaseAdapter {
             earthquakeInformationViewHolder.wikipediaWebPageAddressTextView = (TextView)view.findViewById(R.id.wikipedia_web_page_address_text_view);
             earthquakeInformationViewHolder.countryCodeTextView = (TextView)view.findViewById(R.id.country_code_text_view);
             view.setTag(earthquakeInformationViewHolder);
-        } else {
-            view = convertView;
         }
+        else
+            view = convertView;
+
         earthquakeInformationViewHolder = (EarthquakeInformationViewHolder)view.getTag();
         earthquakeInformationViewHolder.latitudeTextView.setText(String.valueOf(earthquakeInformation.getLatitude()));
         earthquakeInformationViewHolder.longitudeTextView.setText(String.valueOf(earthquakeInformation.getLongitude()));

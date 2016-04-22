@@ -1,10 +1,12 @@
 package ro.pub.cs.systems.eim.lab07.xkcdcartoondisplayer.entities;
 
+
 public class XKCDCartoonInformation {
 
     private String cartoonTitle;
     private String cartoonUrl;
     private String previousCartoonUrl, nextCartoonUrl;
+
 
     public XKCDCartoonInformation() {
         this.cartoonTitle = new String();
@@ -12,6 +14,7 @@ public class XKCDCartoonInformation {
         this.previousCartoonUrl = new String();
         this.nextCartoonUrl = new String();
     }
+
 
     public XKCDCartoonInformation(String cartoonTitle,
                                   String cartoonUrl,
@@ -23,6 +26,7 @@ public class XKCDCartoonInformation {
         this.nextCartoonUrl = nextCartoonUrl;
     }
 
+
     public void setCartoonTitle(String cartoonTitle) {
         this.cartoonTitle = cartoonTitle;
     }
@@ -30,6 +34,7 @@ public class XKCDCartoonInformation {
     public String getCartoonTitle() {
         return cartoonTitle;
     }
+
 
     public void setCartoonUrl(String cartoonUrl) {
         this.cartoonUrl = cartoonUrl;
@@ -39,6 +44,7 @@ public class XKCDCartoonInformation {
         return cartoonUrl;
     }
 
+
     public void setPreviousCartoonUrl(String previousCartoonUrl) {
         this.previousCartoonUrl = previousCartoonUrl;
     }
@@ -46,6 +52,7 @@ public class XKCDCartoonInformation {
     public String getPreviousCartoonUrl() {
         return previousCartoonUrl;
     }
+
 
     public void setNextCartoonUrl(String nextCartoonUrl) {
         this.nextCartoonUrl = nextCartoonUrl;

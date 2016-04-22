@@ -1,5 +1,6 @@
 package ro.pub.cs.systems.eim.lab07.landmarklister.model;
 
+
 public class LandmarkInformation {
 
     private double latitude, longitude;
@@ -9,6 +10,7 @@ public class LandmarkInformation {
     private String name;
     private String wikipediaWebPageAddress;
     private String countryCode;
+
 
     public LandmarkInformation() {
         this.latitude = 0.0;
@@ -20,6 +22,7 @@ public class LandmarkInformation {
         this.wikipediaWebPageAddress = new String();
         this.countryCode = new String();
     }
+
 
     public LandmarkInformation(
             double latitude,
@@ -40,6 +43,7 @@ public class LandmarkInformation {
         this.countryCode = countryCode;
     }
 
+
     public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
@@ -47,6 +51,7 @@ public class LandmarkInformation {
     public double getLatitude() {
         return latitude;
     }
+
 
     public void setLongitude(double longitude) {
         this.longitude = longitude;
@@ -56,6 +61,7 @@ public class LandmarkInformation {
         return longitude;
     }
 
+
     public void setToponymName(String toponyName) {
         this.toponymName = toponyName;
     }
@@ -63,6 +69,7 @@ public class LandmarkInformation {
     public String getToponymName() {
         return toponymName;
     }
+
 
     public void setPopulation(long population) {
         this.population = population;
@@ -72,6 +79,7 @@ public class LandmarkInformation {
         return population;
     }
 
+
     public void setFCodeName(String fCodeName) {
         this.fCodeName = fCodeName;
     }
@@ -79,6 +87,7 @@ public class LandmarkInformation {
     public String getFCodeName() {
         return fCodeName;
     }
+
 
     public void setName(String name) {
         this.name = name;
@@ -88,6 +97,7 @@ public class LandmarkInformation {
         return name;
     }
 
+
     public void setWikipediaWebPageAddress(String wikipediaWebPageAddress) {
         this.wikipediaWebPageAddress = wikipediaWebPageAddress;
     }
@@ -96,6 +106,7 @@ public class LandmarkInformation {
         return wikipediaWebPageAddress;
     }
 
+
     public void setCountryCode(String countryCode) {
         this.countryCode = countryCode;
     }
@@ -103,4 +114,5 @@ public class LandmarkInformation {
     public String getCountryCode() {
         return countryCode;
     }
+
 }

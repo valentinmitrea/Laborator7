@@ -1,6 +1,8 @@
 package ro.pub.cs.systems.eim.lab07.xkcdcartoondisplayer.general;
 
+
 public interface Constants {
+	
     final public static boolean DEBUG                 = true;
 
     final public static String  TAG                   = "Xkcd Cartoon Displayer";
@@ -18,4 +20,5 @@ public interface Constants {
     final public static String  HREF_ATTRIBUTE        = "href";
 
     final public static String  HTTP_PROTOCOL         = "http:";
+    
 }

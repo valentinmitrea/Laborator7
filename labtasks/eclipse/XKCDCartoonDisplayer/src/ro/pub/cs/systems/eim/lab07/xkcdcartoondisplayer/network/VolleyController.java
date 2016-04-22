@@ -6,16 +6,19 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
+
 public class VolleyController {
 
     private static VolleyController instance;
     private static Context context;
     private RequestQueue requestQueue;
 
+
     private VolleyController(Context context) {
         this.context = context;
         this.requestQueue = getRequestQueue();
     }
+
 
     public static synchronized VolleyController getInstance(Context context) {
         if (instance == null) {
@@ -24,12 +27,14 @@ public class VolleyController {
         return instance;
     }
 
+
     public RequestQueue getRequestQueue() {
-        if (requestQueue == null) {
+        if (requestQueue == null)
             requestQueue = Volley.newRequestQueue(context.getApplicationContext());
-        }
+
         return requestQueue;
     }
+
 
     public <T> void addToRequestQueue(Request<T> request) {
         getRequestQueue().add(request);

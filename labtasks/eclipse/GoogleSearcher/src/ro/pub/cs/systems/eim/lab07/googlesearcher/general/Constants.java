@@ -1,5 +1,6 @@
 package ro.pub.cs.systems.eim.lab07.googlesearcher.general;
 
+
 public interface Constants {
 
     final public static boolean DEBUG                       = true;
